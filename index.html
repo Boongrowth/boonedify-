@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boonedify - Quality Online Learning for Nigerian Students</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="hero-banner.png">
+  <link rel="preload" as="image" href="hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="hero-abs-2.png" media="min-width(768px)">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">BoonEdify</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">BoonEdify</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about-us.html" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-up.html" class="navbar-link" data-nav-toggler>Create Account (Teacher)</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-up.html" class="navbar-link" data-nav-toggler>Create Account (Student)</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-in.html" class="navbar-link" data-nav-toggler>Login (Teacher/Student)</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Quality Online Learning for Nigerian Students</p>
+
+            <h2 class="h1 hero-title">
+From Nursery to Senior Class — Learn Anywhere, Anytime
+</h2>
+
+            <p class="hero-text">
+              Live classes • Recorded lessons • Nigerian curriculum
+            </p>
+
+            <a href="sign-up.html" class="btn btn-primary">
+              <span class="span">Get Started Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <img src="hero-banner.png" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <img src="hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+<section class="section category" aria-label="category">
+  <div class="container">
+
+    <p class="section-subtitle">Course Categories</p>
+
+    <h2 class="h2 section-title">Popular Subjects & Topics</h2>
+
+    <ul class="grid-list">
+
+      <!-- Nursery -->
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="cube-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Numbers & Counting (Nursery)</a>
+            </h3>
+            <span class="card-meta">15 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Phonics & Reading (Nursery)</a>
+            </h3>
+            <span class="card-meta">12 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Primary -->
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="calculator-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Mathematics (Primary)</a>
+            </h3>
+            <span class="card-meta">40 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">English Language (Primary)</a>
+            </h3>
+            <span class="card-meta">35 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="globe-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Social Studies (Primary)</a>
+            </h3>
+            <span class="card-meta">28 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Junior Secondary -->
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="flask-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Basic Science (JSS1–JSS3)</a>
+            </h3>
+            <span class="card-meta">30 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="leaf-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Biology (JSS–SSS)</a>
+            </h3>
+            <span class="card-meta">25 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <!-- Senior Secondary -->
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="flame-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Chemistry (SSS1–SSS3)</a>
+            </h3>
+            <span class="card-meta">22 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="construct-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Physics (SSS1–SSS3)</a>
+            </h3>
+            <span class="card-meta">24 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="category-card">
+          <div class="card-icon">
+            <ion-icon name="color-palette-outline"></ion-icon>
+          </div>
+          <div>
+            <h3 class="h3 card-title">
+              <a href="#">Arts & Creativity (All Levels)</a>
+            </h3>
+            <span class="card-meta">20 Lessons</span>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="who-we-are.png" width="450" height="290" loading="lazy" alt="about banner"
+              class="w-100 about-img">
+
+            <img src="who-we-are.png" width="188" height="242" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="who-we-are.png" width="150" height="200" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+
+     <div class="about-content">
+
+  <p class="section-subtitle">Who We Are</p>
+
+  <h2 class="h2 section-title">Empowering Nigerian Students to Learn Anywhere</h2>
+
+  <ul class="about-list">
+
+    <li class="about-item">
+
+      <div class="item-icon item-icon-1">
+        <img src="about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+      </div>
+
+      <div>
+        <h3 class="h3 item-title">Curriculum-Aligned Lessons</h3>
+
+        <p class="item-text">
+          Lessons designed for Nigerian students, from Nursery to Senior Secondary School.
+        </p>
+      </div>
+
+    </li>
+
+    <li class="about-item">
+
+      <div class="item-icon item-icon-2">
+        <img src="about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+      </div>
+
+      <div>
+        <h3 class="h3 item-title">Learn from Experienced Teachers</h3>
+
+        <p class="item-text">
+          Qualified Nigerian educators guide students through every subject with clarity and care.
+        </p>
+      </div>
+
+    </li>
+
+    <li class="about-item">
+
+      <div class="item-icon item-icon-3">
+        <img src="about-icon-3.png" width="30" height="30" loading="lazy" aria-hidden="true">
+      </div>
+
+      <div>
+        <h3 class="h3 item-title">Flexible & Self-Paced Learning</h3>
+
+        <p class="item-text">
+          Students can learn at their own pace, anytime and anywhere, on any device.
+        </p>
+      </div>
+
+    </li>
+
+  </ul>
+
+  <a href="#" class="btn btn-primary">
+    <span class="span">Learn More About Boonedify</span>
+    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+</div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('course-bg.jpg')">
+        <div class="container">
+
+<div class="popular-courses">
+
+<div class="popular-courses">
+
+  <p class="section-subtitle">Popular Topics</p>
+
+  <h2 class="h2 section-title">Trending Topics Across Levels</h2>
+
+  <ul class="grid-list">
+
+    <!-- Nursery Topic -->
+    <li>
+      <div class="course-card">
+
+        <figure class="card-banner">
+          <img src="number-counting.png" width="370" height="270" loading="lazy"
+            alt="Counting & Number Recognition (Nursery)" class="img-cover">
+        </figure>
+
+        <div class="card-actions">
+          <span class="badge">Nursery</span>
+          <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+            <ion-icon name="heart"></ion-icon>
+          </button>
+        </div>
+
+        <div class="card-content">
+          <ul class="card-meta-list">
+            <li class="card-meta-item">
+              <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">12 Lessons</span>
+            </li>
+            <li class="card-meta-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <time datetime="PT1H30M" class="card-meta-text">1h 30m</time>
+            </li>
+          </ul>
+
+          <h3 class="h3">
+            <a href="#" class="card-title">Counting & Number Recognition (Nursery)</a>
+          </h3>
+
+          <div class="rating-wrapper">
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="rating-text">(10 Reviews)</span>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-price">
+              <span class="span">Free</span>
+            </div>
+            <div class="card-meta-item">
+              <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">25 Students</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+
+    <!-- Junior Secondary Topic -->
+    <li>
+      <div class="course-card">
+
+        <figure class="card-banner">
+          <img src="algebra.png" width="370" height="270" loading="lazy"
+            alt="Introduction to Algebra (JSS)" class="img-cover">
+        </figure>
+
+        <div class="card-actions">
+          <span class="badge">Junior</span>
+          <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+            <ion-icon name="heart"></ion-icon>
+          </button>
+        </div>
+
+        <div class="card-content">
+          <ul class="card-meta-list">
+            <li class="card-meta-item">
+              <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">20 Lessons</span>
+            </li>
+            <li class="card-meta-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <time datetime="PT5H" class="card-meta-text">5h 0m</time>
+            </li>
+          </ul>
+
+          <h3 class="h3">
+            <a href="#" class="card-title">Introduction to Algebra (JSS)</a>
+          </h3>
+
+          <div class="rating-wrapper">
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="rating-text">(15 Reviews)</span>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-price">
+              <span class="span">Free</span>
+            </div>
+            <div class="card-meta-item">
+              <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">35 Students</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+
+    <!-- Senior Secondary Topic -->
+    <li>
+      <div class="course-card">
+
+        <figure class="card-banner">
+          <img src="photosynthesis.png" width="370" height="270" loading="lazy"
+            alt="Photosynthesis & Plant Nutrition (SSS)" class="img-cover">
+        </figure>
+
+        <div class="card-actions">
+          <span class="badge">Senior</span>
+          <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+            <ion-icon name="heart"></ion-icon>
+          </button>
+        </div>
+
+        <div class="card-content">
+          <ul class="card-meta-list">
+            <li class="card-meta-item">
+              <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">18 Lessons</span>
+            </li>
+            <li class="card-meta-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <time datetime="PT6H" class="card-meta-text">6h 0m</time>
+            </li>
+          </ul>
+
+          <h3 class="h3">
+            <a href="#" class="card-title">Photosynthesis & Plant Nutrition (SSS)</a>
+          </h3>
+
+          <div class="rating-wrapper">
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="rating-text">(12 Reviews)</span>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-price">
+              <span class="span">Free</span>
+            </div>
+            <div class="card-meta-item">
+              <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+              <span class="card-meta-text">28 Students</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
+  <a href="#" class="btn btn-primary">
+    <span class="span">View All Topics</span>
+    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+</div>
+</section>
+
+      <!-- 
+        - #CTA
+      -->
+
+<section class="section cta" aria-label="workshop" style="background-image: url('cta-bg.png')">
+  <div class="container">
+
+    <figure class="cta-banner">
+      <img src="cta-banner.jpg" width="580" height="380" loading="lazy" alt="Boonedify workshop banner"
+        class="img-cover">
+    </figure>
+
+    <div class="cta-content">
+
+      <p class="section-subtitle">Free Workshop</p>
+
+      <h2 class="h2 section-title">Join Boonedify’s Free Learning Workshops</h2>
+
+      <p class="section-text">
+        Boost your skills and confidence with our interactive workshops designed for students from Nursery to SSS3.
+        Learn from expert tutors, explore popular topics, and get practical tips to excel in school—completely free!
+      </p>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="span">Upcoming Workshop</span>
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+<section class="section event" id="event" aria-label="event">
+  <div class="container">
+
+    <p class="section-subtitle">Upcoming Events</p>
+
+    <h2 class="h2 section-title">Join the Boonedify Community</h2>
+
+    <ul class="grid-list">
+
+      <!-- Event 1: Nursery / Primary -->
+      <li>
+        <div class="event-card">
+
+
+          <div class="card-content">
+
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Online - Zoom</span>
+            </address>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Fun Learning Workshop for Nursery & Primary Students</a>
+            </h3>
+
+            <a href="#" class="btn-link">
+              <span class="span">Register Now</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <!-- Event 2: Junior Secondary -->
+      <li>
+        <div class="event-card">
+
+         
+
+          <div class="card-content">
+
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Online - Google Meet</span>
+            </address>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">JSS Math Challenge Competition</a>
+            </h3>
+
+            <a href="#" class="btn-link">
+              <span class="span">Join the Challenge</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <!-- Event 3: Senior Secondary -->
+      <li>
+        <div class="event-card">
+
+         
+
+          <div class="card-content">
+
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Online - Zoom</span>
+            </address>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">SSS Science & Exam Prep Webinar</a>
+            </h3>
+
+            <a href="#" class="btn-link">
+              <span class="span">Reserve Your Spot</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </li>
+
+      <!-- Event 4: Community & Mentorship -->
+      <li>
+        <div class="event-card">
+
+          
+
+
+          <div class="card-content">
+
+            <address class="card-address">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <span class="span">Online - Zoom</span>
+            </address>
+
+            <h3 class="h3">
+              <a href="#" class="card-title">Boonedify Student Mentorship Circle</a>
+            </h3>
+
+            <a href="#" class="btn-link">
+              <span class="span">Join Community</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Subscribe Newsletter</p>
+
+          <h2 class="h2 section-title">Get Every Latest News</h2>
+
+          <form action="" class="newsletter-form">
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required
+                class="email-field">
+
+              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">Boonedify</a>
+
+        <p class="section-text">
+          Boonedify is Nigeria’s online learning hub for students from Nursery to Senior Secondary. 
+          Learn, explore, and grow with free and engaging courses across all subjects.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Explore</p>
+        </li>
+
+        <li>
+          <a href="about-us.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">About Us</span>
+          </a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Quick Links</p>
+        </li>
+
+        <li>
+          <a href="contact.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Contact Us</span>
+          </a>
+        </li>
+
+
+
+        <li>
+          <a href="sign-up.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Create Account</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="sign-in.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Login</span>
+          </a>
+        </li>
+
+
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Contact Info</p>
+        </li>
+
+        <li class="footer-item">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          <address class="footer-link">
+           Lagos, Nigeria
+          </address>
+        </li>
+
+      
+
+        <li class="footer-item">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          <a href="mailto:boonedify@gmail.com" class="footer-link">boonedify@gmail.com</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2026 Boonedify. All Rights Reserved by <a href="index.html" class="copyright-link">Boonedify</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
