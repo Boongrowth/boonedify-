@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boonedify - Education Is About Academic Excellence</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="logincss.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="hero-banner.png">
+  <link rel="preload" as="image" href="hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="hero-abs-2.png" media="min-width(768px)">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">BoonEdify</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">BoonEdify</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about-us.html" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-up.html" class="navbar-link" data-nav-toggler>Create Account (Teacher)</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-up.html" class="navbar-link" data-nav-toggler>Create Account (Student)</a>
+          </li>
+          <li class="navbar-item">
+            <a href="sign-in.html" class="navbar-link" data-nav-toggler>Login (Teacher/Student)</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+    
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Securely login to BoonEdify</p>
+
+          <h2 class="h2 section-title">Log in to continue</h2>
+
+          <form action="" class="newsletter-form">
+
+            <div class="input-wrapper">
+              <input type="email" id="email" placeholder="Enter your E-mail" required
+                class="email-field">
+
+              <ion-icon name="key-outline" aria-hidden="true"></ion-icon>
+              </div>
+                          <div class="input-wrapper">
+              <input type="password" id="password" placeholder="Enter your Password" required
+                class="email-field">
+
+              <ion-icon name="key-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button onclick="login()" class="btn btn-primary">
+              <span class="span">Login</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+ <footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">Boonedify</a>
+
+        <p class="section-text">
+          Boonedify is Nigeria’s online learning hub for students from Nursery to Senior Secondary. 
+          Learn, explore, and grow with free and engaging courses across all subjects.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Explore</p>
+        </li>
+
+        <li>
+          <a href="about-us.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">About Us</span>
+          </a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Quick Links</p>
+        </li>
+
+        <li>
+          <a href="contact.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Contact Us</span>
+          </a>
+        </li>
+
+
+
+        <li>
+          <a href="sign-up.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Create Account</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="sign-in.html" class="footer-link">
+            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            <span class="span">Login</span>
+          </a>
+        </li>
+
+
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Contact Info</p>
+        </li>
+
+        <li class="footer-item">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          <address class="footer-link">
+           Lagos, Nigeria
+          </address>
+        </li>
+
+      
+
+        <li class="footer-item">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          <a href="mailto:boonedify@gmail.com" class="footer-link">boonedify@gmail.com</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2026 Boonedify. All Rights Reserved by <a href="index.html" class="copyright-link">Boonedify</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+    <script>
+        // Firebase Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyAtVvPjdsj84mWqaG4-7SyjbljCnslZ1SM",
+            authDomain: "hendaa-1.firebaseapp.com",
+            projectId: "hendaa-1",
+            storageBucket: "hendaa-1.appspot.com",
+            messagingSenderId: "831134776479",
+            appId: "1:831134776479:web:56cd7098fc69cd70a376aa"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Login Function
+        function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            firebase.auth().signInWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    alert("Login Successful!");
+                    window.location.href = "dashboard.html"; // Redirect to Dashboard
+                })
+                .catch((error) => {
+                    alert("Error: " + error.message);
+                });
+        }
+
+        // Google Login
+        function googleLogin() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithPopup(provider)
+                .then((result) => {
+                    alert("Google Login Successful!");
+                    window.location.href = "dashboard.html";
+                })
+                .catch((error) => {
+                    alert("Error: " + error.message);
+                });
+        }
+    </script>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
